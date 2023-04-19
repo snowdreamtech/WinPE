@@ -1,3 +1,3 @@
-Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
+Dism /Get-Packages /Image:"C:\WinPE_!archdir!\mount"
 
 pause

@@ -1,1 +1,1 @@
-Dism /Unmount-Image /MountDir:C:\WinPE_amd64\mount /Commit
+Dism /Unmount-Image /MountDir:C:\WinPE_!archdir!\mount /Commit
