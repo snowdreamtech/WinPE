@@ -1,0 +1,62 @@
+[Options]
+
+Disables Windows 8+ FastBoot
+NoHiberBoot=0
+
+# Keeps used ISO files mounted after exit - (0 or 1) default 0
+KeepISOAlive=0
+
+# set diskpart script editor program
+diskparteditor=notepad.exe
+
+# Skip VHD usage warning - (0 or 1) default 0
+IgnoreVHDs=0
+
+# Don't mount boot partitions - (0 or 1) default 0
+NoBootMount=0
+
+# Dosdevices or Disk number to be ignored, when search and mount boot partitions (use | as delimiter)
+# \Device\HarddiskVolume1|Disk1
+BootMountExclude=
+
+
+# wimgapi or wimlib - (0, 1 or 2) default 0
+# 0 use wimgapi.dll
+# 1 use wimlib.dll
+# 2 use wimgapi for apply and wimlib for capture
+UseWimLIB=2
+
+# Extend GUI scaling factor, for unusal system fonts
+# 0.1 makes GUI 10% larger
+GUIScalePlus=0
+
+#Flushes the disk after apply - (0 or 1) default 1
+FlushDisk=1
+
+# WimGapi multithreaded apply (XPRESS, LZX only) - (0, 1 or n) default half of CPU physical cores
+# 0 - disabled
+# 1 - all treads
+# n - number of threads
+UseMultiCore=
+
+# Darkmode GUI support - (0 or 1) default system default
+DarkMode=
+
+#Disables the log file - (0 or 1) default 0
+LogFile=
+
+# Shows string number in GUI - (0 or 1) default 0
+HelpLangID=
+
+# Removes the Filesystem checks - (0 or 1) default 0
+NoFileSystemChecks=
+
+[WinNT5]
+unattendeditor=Notepad.exe
+
+[WinNT6]
+unattendeditor=Notepad.exe
+
+# default edtition, if no index is specified
+# Professional, Core, Education, Enterprise,
+DefaultSKU= 
