@@ -19,7 +19,7 @@ for %%i in (amd64 x86) do (
         set archdir=x86
     )
 
-    for %%j in (zh-cn zh-tw en) do (
+    for %%j in (zh-cn zh-tw en) do (
         set local=%%j
         call "%pwd%\CopyPE.bat"
         call "%pwd%\MountPE.bat"
