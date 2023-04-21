@@ -27,6 +27,7 @@ for %%i in (amd64 x86) do (
         if %%j NEQ en call "%pwd%\AddPackage_%%j.bat"
         call "%pwd%\AddTemporaryStorage.bat"
         call "%pwd%\CopyApps.bat"
+        call "%pwd%\CopyScripts.bat"
         call "%pwd%\Startnet.bat"
         call "%pwd%\UnMountPE.bat"
         call "%pwd%\MakeISOPE.bat"
